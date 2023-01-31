@@ -4,26 +4,54 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&family=Titan+One&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="/css/styles.css" />
     <title>IceCream</title>
   </head>
   <body>
-    <header class="header">
-      <div class="header__nav">
-        <img href="images/logo 1logo.png" alt="logo" width="199" />
-        <ul>
-          <li>
-            <svg>
-              <use></use>
-            </svg>
-          </li>
-        </ul>
+    <section class="about">
+      <div class="container about__wrapper">
+        <p class="about__label">Tradition and love</p>
+        <h1 class="about__header">How it`s made?</h1>
+        <div class="about__content-wrapper">
+          <picture class="about__image">
+            <source
+              srcset="/images/desktop.png, /images/desktop@2x.png 2x"
+              media="(min-width:1280px)"
+            />
+            <source
+              srcset="/images/tablet.png, /images/tablet@2x.png 2x"
+              media="(min-width: 768px)"
+            />
+            <img
+              alt="picture of cow and glass of milk"
+              src="/images/mobile.png"
+              srcset="/images/mobile@2x.png 2x"
+            />
+          </picture>
+          <div class="about__descriptions">
+            <p class="about__p1">
+              Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel
+              justo cursus, faucibus lorem eget, egestas eros. Maecenas eleifend
+              erat at justo fringilla.
+            </p>
+
+            <p class="about__p2">
+              Curabitur lacinia enim at ex blandit, vel pellentesque odio
+              elementum. Mauris rhoncus orci in imperdiet placerat. Vestibulum
+              euismod nisl suscipit ligula volutpat, a feugiat urna maximus.
+              Cras massa nibh, tincidunt. Aliquam erat volutpat. Aenean
+              accumsan.
+            </p>
+          </div>
+        </div>
+        <button class="about__btn">Read more</button>
       </div>
-      <div class="header__nav-second">
-        <h1>Ice cream made with <span>passion</span></h1>
-        <button>Products</button>
-        <button>How it`s made?</button>
-      </div>
-    </header>
+    </section>
   </body>
 </html>

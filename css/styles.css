@@ -3,8 +3,123 @@
     padding: 0;
     box-sizing: border-box;
 }
-.header {
-    min-width: 320px;
-    max-width: 768px;
-    background-color: #FFB8CA;
+.container {
+    max-width: 480px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
 }
+.about__wrapper {
+    background-color: #FFF5F6;
+    background-image: url(/images/desktopbg.png);
+    background-repeat: no-repeat;
+    background-size: 100vw;
+    background-position:bottom;
+}
+.about__label {
+    font-family: 'Titan One', cursive;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 20px;
+    color: #FFA5BA;
+    margin-top: 125px;
+    /* display: flex;
+    justify-content: center; */
+}
+.about__header {
+    font-family: 'Titan One', cursive;
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 38.9px;
+    letter-spacing: 0.04em;
+    color: #D41443;
+    margin-top: 15px;
+
+}
+.about__p1 {
+    font-family: 'DM Sans';
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 19.4px;
+    letter-spacing: 0.04em;
+    margin: 0 50px 47px 50px;
+}
+.about__p2 {
+    font-family: 'DM Sans';
+    color: #907E82;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 0.04em;  
+    margin: 0 50px 47px 50px;
+}
+.about__image {
+    margin: 26px 20px 46px 20px;
+}
+@media screen and (min-width:768px) {
+    .container {
+        max-width:768px
+    }
+    .about__wrapper {
+        background-image: none;
+    }
+    .about__label {
+        font-size: 26px;
+        line-height: 29px;
+    }
+    .about__header {
+        font-size: 48px;
+        line-height: 54px;
+    }
+    .about__content-wrapper {
+        display: flex;
+    }
+    .about__descriptions {
+        margin-top: 100px;
+        display: flex;
+        flex-direction: column;
+    }
+    .about__p1 {
+        margin-left: 0;
+        font-size: 14px;
+        line-height: 24px;
+    }
+    .about__p2 {
+        margin-left: 0;
+        font-size: 14px;
+        line-height: 24px; 
+    }
+}
+@media screen and (min-width:1280px) {
+    .container {
+        max-width:1280px
+    }
+    .about__wrapper {
+        background-image: url(/images/desktopbg.png);
+    }
+    .about__label {
+        font-size: 30px;
+        line-height: 34px;
+        letter-spacing: 0.04em;
+    }
+    .about__header {
+        font-size: 58px;
+        line-height: 66px;
+        letter-spacing: 0.06em;
+    }
+    .about__p1 {
+        font-size: 16px;
+        line-height: 28px;
+        margin-left: 74px;
+    }
+    .about__p2 {
+        line-height: 27px;
+        margin-left: 74px;
+    }
+    .about__image {
+        margin-left: 112px;
+    }
+} 
